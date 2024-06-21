@@ -1,0 +1,483 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
+  \*************************************************************************************************************/
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "【净】焦糖奶茶", "微软雅黑", "楷体", "宋体";
+  font-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  position: relative;
+}
+body * {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+input {
+  outline: none;
+  box-sizing: border-box;
+}
+
+.df {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.jump-project {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(147, 220, 147, 0.4);
+  font-size: 14px;
+}
+
+/* S全局样式S */
+@keyframes animated-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes ext {
+  0% {
+    border-image: linear-gradient(45deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  }
+  25% {
+    border-image: linear-gradient(135deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  }
+  50% {
+    border-image: linear-gradient(225deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  }
+  75% {
+    border-image: linear-gradient(315deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  }
+  100% {
+    border-image: linear-gradient(405deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  }
+}
+@keyframes bl {
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-out-expand {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+}
+@keyframes timeText {
+  0% {
+    background-position: 0px 0;
+  }
+  50% {
+    background-position: 300px 0;
+  }
+  100% {
+    background-position: 600px 0;
+  }
+}
+/* ----------------------------------- 动画 ----------------------------------- */
+.tracking-in-contract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.tracking-out-expand {
+  animation: tracking-out-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+body > div.external {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body > div.external > div.banner {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  background: rgb(142, 142, 142);
+  background: linear-gradient(0deg, rgba(142, 142, 142, 0) 0%, rgb(0, 0, 0) 100%);
+}
+body > div.external > div.ext {
+  width: 80%;
+  margin: 5% auto;
+  position: relative;
+}
+body > div.external > div.ext::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.5s;
+}
+body > div.external > div.ext:hover::before {
+  backdrop-filter: blur(10px);
+}
+body > div.external > div.show {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -20;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+body > div.external > div.show > div {
+  width: 0;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body > div.external > div.show > div:first-child {
+  background-image: url(2ca01d8491fc9716ba65.jpg);
+}
+body > div.external > div.show > div:nth-child(2) {
+  background-image: url(7225021eb76fbae6bfa2.jpg);
+}
+body > div.external > div.show > div:nth-child(3) {
+  background-image: url(db556d5a06bdde374b35.jpg);
+}
+body > div.external > div.show > div:nth-child(4) {
+  background-image: url(68e9d9fac7ce6bc87ad1.jpg);
+}
+body > div.external > div.show > div:nth-child(5) {
+  background-image: url(93380fce42e055c36711.jpg);
+}
+body > div.external > div.show > div:nth-child(6) {
+  background-image: url(ee14fdc2a043698fff15.jpg);
+}
+body > div.external > div.show > div:nth-child(7) {
+  background-image: url(4c8e573665c22b4a88d7.jpg);
+}
+body > div.external > div.show > div:nth-child(8) {
+  background-image: url(939a6768e4feb2db0896.jpg);
+}
+body > div.external > div.show > div:nth-child(9) {
+  background-image: url(15e4b07ed269080ac489.jpg);
+}
+body > div.external > div.show > div:last-child {
+  background-image: url(1267394783c355252a6b.jpg);
+}
+body > div.external > div.show > .imgAc {
+  width: 100%;
+  opacity: 1;
+}
+body > div.external > div.show-work {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 2%;
+}
+body > div.external > div.show-work > .week-item {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+body > div.external > div.show-work > .week-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  backdrop-filter: blur(1px);
+  transition: filter 0.5s;
+}
+body > div.external > div.show-work > .week-item-ac {
+  background-color: rgba(20, 213, 238, 0.4745098039);
+  color: #fff;
+}
+body > div.external > div.show-work > .week-item-ac::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  backdrop-filter: blur(0px);
+  box-shadow: 5px 5px 20px 0 gainsboro;
+}
+
+.exc {
+  box-sizing: border-box;
+  padding: 30px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 2;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  box-shadow: 0 0 20px 5px rgba(221, 221, 221, 0);
+  transition: box-shadow 0.5s;
+  box-shadow: 0px 0px 4px gainsboro;
+}
+.exc:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-style: solid;
+  border-width: 2px;
+  border-image: -webkit-linear-gradient(0deg, rgb(34, 93, 252) 20%, rgb(142, 82, 177) 54%, rgb(252, 70, 70) 93%) 1;
+  opacity: 0;
+  animation: ext 3s linear running infinite;
+  transition: 0.5s;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+.exc:hover {
+  box-shadow: 0 0 20px 5px rgba(222, 222, 222, 0.4);
+}
+
+.exc:hover > .Econtent > div {
+  border: 1px solid rgba(29, 29, 29, 0.4);
+}
+
+.exc:hover > div.dolTwo {
+  backdrop-filter: blur(15px);
+}
+
+.exc:hover > div.dolTwo > button {
+  opacity: 0.5;
+}
+
+.exc:hover::after {
+  opacity: 1;
+}
+
+.exc:hover > .Title {
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both, timeText 6s infinite;
+}
+
+.Title {
+  width: 400px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 30px;
+  text-align: center;
+  color: #d2d2d2;
+  transition: 0.5s;
+  animation: tracking-out-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.Title:hover {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.Econtent > div:hover > .jump-project {
+  color: #d2d2d2;
+}
+
+.Econtent > div:hover::after {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.Econtent {
+  display: flex;
+  margin-top: 1%;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.Econtent > div {
+  text-align: center;
+  line-height: 50px;
+  margin: 2%;
+  transition: 0.3s;
+  position: relative;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 15px rgba(123, 123, 123, 0.4);
+}
+.Econtent > div > .jump-project {
+  box-sizing: border-box;
+  display: block;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+}
+.Econtent > div > .jump-project::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(50px);
+  z-index: -1;
+}
+.Econtent > div:hover {
+  background-color: rgba(10, 10, 10, 0.2);
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 7px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2) translateY(-5px);
+  animation: animated-border infinite 1s;
+}
+.Econtent > div::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.Econtent > div:active::after {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Time {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  background: linear-gradient(90deg, rgb(255, 115, 115) 5%, rgb(82, 155, 255) 50%, rgb(255, 115, 115) 95%);
+  background-position: 0 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: timeText 3s infinite;
+  transition: background-images 0.5s, opacity 0.3s;
+}
+.Time > p {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 40%;
+  margin: 0 auto;
+}
+.Time > p > span:nth-child(1),
+.Time > p > span:last-child {
+  text-align: center;
+  transition: 0.3s;
+  flex: 2;
+}
+.Time > p > span {
+  flex: 1;
+  text-align: center;
+}
+.Time > p > span:nth-child(4) {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+}
+.Time > p > span:nth-child(4) > span {
+  text-align: center;
+  flex: 1;
+}
+
+.dolTwo {
+  transition: 0.3s;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  left: 5%;
+}
+.dolTwo > button {
+  cursor: pointer;
+  color: #d1d1d1;
+  letter-spacing: 5px;
+  opacity: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+}
+.dolTwo > button:hover {
+  opacity: 1 !important;
+}
